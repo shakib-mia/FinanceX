@@ -32,7 +32,3 @@ body {
 .service {
   @apply cursor-pointer;
 }
-
-/* .service:hover .service-btn {
-  @apply bg-[#CBFC01];
-} */

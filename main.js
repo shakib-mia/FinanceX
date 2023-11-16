@@ -5,9 +5,3 @@ fetch("./index.html")
   .then(
     (htmlContent) => (document.querySelector("#app").innerHTML = htmlContent)
   );
-
-// document.querySelector("#app").innerHTML = `
-//   <div class="bg-no-repeat bg-cover" style="background-image: url('./assets/background.svg')">
-//     <nav></nav>
-//   </div>
-// `;
