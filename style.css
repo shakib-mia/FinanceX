@@ -10,7 +10,7 @@ body {
 }
 
 .container-fluid {
-  @apply px-[120px] w-full;
+  @apply px-10 xl:px-[120px] w-full;
 }
 
 .satoshi {
@@ -22,7 +22,7 @@ body {
 }
 
 .button {
-  @apply px-[45px] py-[21px] bg-[#CBFC01] w-fit text-[#151515] font-bold satoshi;
+  @apply px-[24px] xl:px-[45px] py-[16px] xl:py-[21px] bg-[#CBFC01] w-fit text-[#151515] font-bold satoshi;
 }
 
 .button-flex {
@@ -31,4 +31,81 @@ body {
 
 .service {
   @apply cursor-pointer;
+}
+
+#carousel-container {
+  trnasform: trnaslateX(100vw);
+}
+
+#phone-navbar {
+  display: none;
+}
+
+#nav-checkbox:checked #phone-navbar {
+  display: block;
+}
+
+.navbar-logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* display: none; */
+}
+
+.navbar-menu-item {
+  margin-right: 15px;
+}
+
+.navbar-menu-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.navbar-hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger-bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+.navbar-hamburger:focus .navbar-menu {
+  @apply flex;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .navbar-menu-item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .navbar-hamburger {
+    display: flex;
+  }
 }

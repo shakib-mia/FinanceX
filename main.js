@@ -5,3 +5,9 @@ fetch("./index.html")
   .then(
     (htmlContent) => (document.querySelector("#app").innerHTML = htmlContent)
   );
+
+// function toggleNavbar() {
+//   var navbarMenu = document.querySelector(".navbar-menu");
+//   navbarMenu.style.display =
+//     navbarMenu.style.display === "flex" ? "none" : "flex";
+// }
