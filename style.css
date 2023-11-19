@@ -10,7 +10,7 @@ body {
 }
 
 .container-fluid {
-  @apply px-10 xl:px-[120px] w-full;
+  @apply px-5 xl:px-[120px] w-full;
 }
 
 .satoshi {
