@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
+    <!-- NAVBAR STARTS HERE -->
     <nav
       class="px-5 py-7 xl:px-[120px] xl:py-[44px] text-white flex justify-between absolute w-full"
     >
@@ -56,9 +57,13 @@
       </aside>
     </nav>
 
+    <!-- Navbar Ends Here -->
+
     <main>
+      <!-- Hero Section Starts Here -->
+
       <header
-        class="grid grid-cols-1 xl:grid-cols-2 gap-[103px] container-fluid py-20 xl:pt-[223px] xl:pb-[132px] items-center bg-cover"
+        class="grid grid-cols-1 xl:grid-cols-2 gap-[103px] container-fluid pb-20 pt-32 xl:pt-[223px] xl:pb-[132px] items-center bg-cover"
         style="background-image: url('./../assets/header-bg.svg')"
       >
         <aside>
@@ -92,35 +97,49 @@
         </aside>
       </header>
 
+      <!-- Hero Section Ends Here -->
+
+      <!-- Clients Section Adds Here -->
       <section
-        class="container-fluid bg-[#CBFC01] grid grid-cols-2 xl:grid-cols-5 items-center gap-10 xl:gap-[156px] py-[20px] xl:py-[83px]"
+        class="container-fluid bg-[#CBFC01] flex flex-wrap xl:flex-nowrap justify-center items-center gap-10 xl:gap-[9.75rem] py-[20px] xl:py-[83px]"
       >
-        <img
-          class="w-auto h-[50px] mx-auto"
-          src="./../assets/logos/Paypal-Grey.svg"
-          alt="Paypal-Grey"
-        />
-        <img
-          class="w-auto h-[50px] mx-auto"
-          src="./../assets/logos/Webflow Grey.svg"
-          alt="Webflow Grey"
-        />
-        <img
-          class="w-auto h-[50px] mx-auto"
-          src="./../assets/logos/Google Grey.svg"
-          alt="Google Grey"
-        />
-        <img
-          class="w-auto h-[50px] mx-auto"
-          src="./../assets/logos/amazon.svg"
-          alt="amazon"
-        />
-        <img
-          class="w-auto h-[50px] mx-auto"
-          src="./../assets/logos/Adobe Grey.svg"
-          alt="Adobe Grey"
-        />
+        <div class="h-[50px] w-auto">
+          <img
+            class="h-full w-auto"
+            src="./../assets/logos/Paypal-Grey.svg"
+            alt="Paypal-Grey"
+          />
+        </div>
+        <div class="h-[50px] w-auto">
+          <img
+            class="h-full w-auto"
+            src="./../assets/logos/Adobe Grey.svg"
+            alt="Adobe Grey"
+          />
+        </div>
+        <div class="h-[50px] w-auto">
+          <img
+            class="h-full w-auto"
+            src="./../assets/logos/Webflow Grey.svg"
+            alt="Webflow Grey"
+          />
+        </div>
+        <div class="h-[50px] w-auto">
+          <img
+            class="h-full w-auto"
+            src="./../assets/logos/Google Grey.svg"
+            alt="Google Grey"
+          />
+        </div>
+        <div class="h-[50px] w-auto">
+          <img
+            class="h-full w-auto"
+            src="./../assets/logos/amazon.svg"
+            alt="amazon"
+          />
+        </div>
       </section>
+      <!-- Clients Section Adds Here -->
 
       <section
         class="gap-[51px] container-fluid text-white my-10 xl:my-[150px]"
@@ -148,7 +167,7 @@
               <h2 class="mt-[36px] satoshi text-[24px] font-semibold mb-6">
                 Checking accounts
               </h2>
-              <p>
+              <p class="leading-loose">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
                 aliquam, purus sit amet luctus venenatis, lectus magna fringilla
                 urna, porttitor
@@ -169,7 +188,7 @@
               <h2 class="mt-[36px] satoshi text-[24px] font-semibold mb-6">
                 Checking accounts
               </h2>
-              <p>
+              <p class="leading-loose">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
                 aliquam, purus sit amet luctus venenatis, lectus magna fringilla
                 urna, porttitor
@@ -196,7 +215,7 @@
             <h2 class="mt-[36px] satoshi text-[24px] font-semibold mb-6">
               Checking accounts
             </h2>
-            <p>
+            <p class="leading-loose">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
               aliquam, purus sit amet luctus venenatis, lectus magna fringilla
               urna, porttitor
@@ -217,7 +236,7 @@
             <h2 class="mt-[36px] satoshi text-[24px] font-semibold mb-6">
               Checking accounts
             </h2>
-            <p>
+            <p class="leading-loose">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
               aliquam, purus sit amet luctus venenatis, lectus magna fringilla
               urna, porttitor
@@ -238,7 +257,7 @@
             <h2 class="mt-[36px] satoshi text-[24px] font-semibold mb-6">
               Checking accounts
             </h2>
-            <p>
+            <p class="leading-loose">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
               aliquam, purus sit amet luctus venenatis, lectus magna fringilla
               urna, porttitor
@@ -302,7 +321,7 @@
       </section>
 
       <section
-        class="my-[150px] grid grid-cols-1 xl:grid-cols-2 items-center gap-[108px] container-fluid"
+        class="mt-[150px] mb-[70px] xl:my-[150px] grid grid-cols-1 xl:grid-cols-2 items-center gap-[108px] container-fluid"
       >
         <aside>
           <h6 class="text-[#CBFC01] font-semibold rubik">Our Services</h6>
@@ -410,7 +429,9 @@
         style="background-image: url(../assets/black-bg.webp)"
       >
         <h6 class="font-semibold rubik">Our Services</h6>
-        <div class="flex items-center justify-between">
+        <div
+          class="flex flex-col xl:flex-row xl:items-center xl:justify-between"
+        >
           <h1
             class="mt-[21px] text-[40px] xl:text-[72px] font-bold satoshi mb-[20px] w-7/12"
           >
@@ -453,7 +474,7 @@
           </aside>
         </div>
 
-        <div
+        <!-- <div
           class="relative w-full overflow-x-scroll h-[50vw]"
           id="carousel-container"
         >
@@ -481,7 +502,7 @@
             nesciunt velit laborum, rem quasi eaque voluptate repellendus
             architecto. Et delectus cumque consequatur!
           </div>
-        </div>
+        </div> -->
       </section>
 
       <section class="p-10 xl:py-[150px] xl:px-[117px]">
