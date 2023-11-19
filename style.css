@@ -34,7 +34,7 @@ body {
 }
 
 #carousel-container {
-  trnasform: trnaslateX(100vw);
+  transform: translateX(100vw);
 }
 
 #phone-navbar {
