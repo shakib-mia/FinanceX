@@ -10,7 +10,7 @@ body {
 }
 
 .container-fluid {
-  @apply px-5 xl:px-[120px] w-full;
+  @apply px-5 xl:px-[7.5rem] w-full;
 }
 
 .satoshi {
@@ -22,11 +22,11 @@ body {
 }
 
 .button {
-  @apply px-[24px] xl:px-[45px] py-[16px] xl:py-[21px] bg-[#CBFC01] w-fit text-[#151515] font-bold satoshi;
+  @apply px-[1.5rem] xl:px-[2.8125rem] py-[1rem] xl:py-[1.3125rem] bg-[#CBFC01] w-fit text-[#151515] font-bold satoshi;
 }
 
 .button-flex {
-  @apply flex gap-[21px] w-fit;
+  @apply flex gap-[1.3125rem] w-fit;
 }
 
 .service {
