@@ -5,14 +5,31 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.theme.default.min.css"
+    />
   </head>
   <body>
     <!-- ===========*** *** ***=========== NAVBAR STARTS HERE ===========*** *** ***=========== -->
     <nav
-      class="px-5 py-7 xl:px-[7.5rem] xl:py-[2.75rem] text-white flex justify-between absolute w-full"
+      class="text-white py-7 xl:py-11 flex justify-between items-center absolute left-0 right-0 m-auto container"
     >
-      <aside class="satoshi text-2xl font-bold">FinanceX</aside>
-      <div class="hidden xl:flex gap-4 text-light list-none">
+      <aside class="satoshi text-2xl font-bold z-50">FinanceX</aside>
+      <label for="navbar-check" class="xl:hidden z-50">
+        <img src="./assets/hamburger.png" alt="hamburger" class="w-5 h-4" />
+      </label>
+      <input type="checkbox" name="" id="navbar-check" class="hidden" />
+      <ul
+        id="navbar"
+        class="flex flex-col xl:flex-row xl:justify-center gap-4 text-light list-none absolute xl:static bg-black xl:bg-transparent w-full left-0 xl:py-0 pb-3 pt-20 top-0 px-4"
+      >
         <li>
           <a class="hover:text-white transition" href="#">Why financeX</a>
         </li>
@@ -25,32 +42,9 @@
         <li>
           <a class="hover:text-white transition" href="#">Blog</a>
         </li>
-      </div>
+      </ul>
 
-      <div class="xl:hidden">
-        <div class="navbar-menu">
-          <li class="navbar-menu-item">
-            <a href="#" class="navbar-menu-link">Home</a>
-          </li>
-          <li class="navbar-menu-item">
-            <a href="#" class="navbar-menu-link">About</a>
-          </li>
-          <li class="navbar-menu-item">
-            <a href="#" class="navbar-menu-link">Services</a>
-          </li>
-          <li class="navbar-menu-item">
-            <a href="#" class="navbar-menu-link">Contact</a>
-          </li>
-        </div>
-
-        <div class="navbar-hamburger">
-          <div class="hamburger-bar"></div>
-          <div class="hamburger-bar"></div>
-          <div class="hamburger-bar"></div>
-        </div>
-      </div>
-
-      <aside class="hidden xl:block">
+      <aside class="hidden w-32 xl:block">
         <button class="flex gap-3 items-center text-base font-medium">
           Sign Up
 
@@ -65,89 +59,95 @@
       <!-- ===========*** *** ***=========== Hero Section Starts Here ===========*** *** ***=========== -->
 
       <header
-        class="grid grid-cols-1 xl:grid-cols-2 2xl:h-screen gap-[6.4375rem] container-fluid pb-20 pt-32 xl:pt-[13.8375rem] xl:pb-[8.25rem] items-center bg-cover"
+        class="b-20 pt-32 pb-10 xl:pt-[13.8375rem] xl:pb-[8.25rem] items-center bg-cover"
         style="background-image: url('./assets/header-bg.svg')"
       >
-        <aside>
-          <h6 class="text-primary text-[1.25rem] font-semibold">
-            Welcome! Future Platform
-          </h6>
-          <h1
-            class="satoshi text-white text-[2.5rem] xl:text-[4.5rem] font-black"
-          >
-            The World's Most Modern Card
-            <span class="text-primary">Platform</span>
-          </h1>
+        <div
+          class="grid grid-cols-1 xl:grid-cols-2 2xl:h-screen gap-[6.4375rem] container"
+        >
+          <aside>
+            <h6 class="text-primary text-[1.25rem] font-semibold">
+              Welcome! Future Platform
+            </h6>
+            <h1
+              class="satoshi text-white text-[2.5rem] xl:text-[4.5rem] font-black"
+            >
+              The World's Most Modern Card
+              <span class="text-primary">Platform</span>
+            </h1>
 
-          <p
-            class="pt-[2.5rem] pb-[3.125rem] rubik text-light text-[1.125rem] leading-[1.6875rem]"
-          >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
-            purus sit amet luctus venenatis, lectus magna fringilla urna,
-            porttitor
-          </p>
+            <p
+              class="pt-[2.5rem] pb-[3.125rem] rubik text-light text-[1.125rem] leading-[1.6875rem]"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+              urna, porttitor
+            </p>
 
-          <a href="#" class="button button-flex">
-            Get Started <img src="./assets/arrow.svg" alt="" />
-          </a>
-        </aside>
+            <a href="#" class="button button-flex">
+              Get Started <img src="./assets/arrow.svg" alt="" />
+            </a>
+          </aside>
 
-        <aside class="hidden xl:block">
-          <img
-            src="./assets/hero-right.webp"
-            alt="hero-right"
-            class="absolute right-0 w-1/2 top-0 bottom-0 m-auto"
-          />
-        </aside>
+          <aside class="hidden xl:block">
+            <img
+              src="./assets/hero-right.webp"
+              alt="hero-right"
+              class="absolute right-0 w-1/2 top-0 bottom-0 m-auto"
+            />
+          </aside>
+        </div>
       </header>
 
       <!-- ===========*** *** ***=========== Hero Section Ends Here ===========*** *** ***=========== -->
 
       <!-- ===========*** *** ***=========== Clients Section Starts Here ===========*** *** ***=========== -->
-      <section
-        class="container-fluid bg-primary flex flex-wrap xl:flex-nowrap justify-center items-center gap-10 xl:gap-[9.75rem] py-[1.25rem] xl:py-[5.1875rem]"
-      >
-        <div class="h-[3.125rem] w-auto">
-          <img
-            class="h-full w-auto"
-            src="./assets/logos/Paypal-Grey.svg"
-            alt="Paypal-Grey"
-          />
-        </div>
-        <div class="h-[3.125rem] w-auto">
-          <img
-            class="h-full w-auto"
-            src="./assets/logos/Adobe Grey.svg"
-            alt="Adobe Grey"
-          />
-        </div>
-        <div class="h-[3.125rem] w-auto">
-          <img
-            class="h-full w-auto"
-            src="./assets/logos/Webflow Grey.svg"
-            alt="Webflow Grey"
-          />
-        </div>
-        <div class="h-[3.125rem] w-auto">
-          <img
-            class="h-full w-auto"
-            src="./assets/logos/Google Grey.svg"
-            alt="Google Grey"
-          />
-        </div>
-        <div class="h-[3.125rem] w-auto">
-          <img
-            class="h-full w-auto"
-            src="./assets/logos/amazon.svg"
-            alt="amazon"
-          />
+      <section class="bg-primary py-[1.25rem] xl:py-[5.1875rem]">
+        <div
+          class="flex flex-wrap xl:flex-nowrap justify-between items-center gap-10 xl:gap-[9.75rem] container"
+        >
+          <div class="h-[3.125rem] w-auto">
+            <img
+              class="h-full w-auto"
+              src="./assets/logos/Paypal-Grey.svg"
+              alt="Paypal-Grey"
+            />
+          </div>
+          <div class="h-[3.125rem] w-auto">
+            <img
+              class="h-full w-auto"
+              src="./assets/logos/Adobe Grey.svg"
+              alt="Adobe Grey"
+            />
+          </div>
+          <div class="h-[3.125rem] w-auto">
+            <img
+              class="h-full w-auto"
+              src="./assets/logos/Webflow Grey.svg"
+              alt="Webflow Grey"
+            />
+          </div>
+          <div class="h-[3.125rem] w-auto">
+            <img
+              class="h-full w-auto"
+              src="./assets/logos/Google Grey.svg"
+              alt="Google Grey"
+            />
+          </div>
+          <div class="h-[3.125rem] w-auto">
+            <img
+              class="h-full w-auto"
+              src="./assets/logos/amazon.svg"
+              alt="amazon"
+            />
+          </div>
         </div>
       </section>
       <!-- ===========*** *** ***=========== Clients Section Ends Here ===========*** *** ***=========== -->
 
       <!-- ===========*** *** ***=========== Services Section Starts Here ===========*** *** ***=========== -->
       <section
-        class="gap-[3.1875rem] container-fluid text-white my-10 xl:my-[13.125rem]"
+        class="gap-[3.1875rem] container text-white my-10 xl:my-[13.125rem]"
       >
         <div class="xl:flex">
           <!-- ===========*** *** ***=========== Services Section left Part ===========*** *** ***=========== -->
@@ -173,10 +173,12 @@
               <div
                 class="w-[3rem] h-[0.125rem] bg-white absolute left-5 top-7 xl:top-[3.75rem] xl:left-[2.5rem]"
               ></div>
-              <h2 class="mt-[2.25rem] satoshi text-[1.5rem] font-semibold mb-6">
+              <h2
+                class="mt-[2.25rem] satoshi text-lg md:text-xl xl:text-2xl font-semibold mb-6"
+              >
                 Checking accounts
               </h2>
-              <p class="leading-loose">
+              <p class="leading-loose text-sm md:text-base">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
                 aliquam, purus sit amet luctus venenatis, lectus magna fringilla
                 urna, porttitor
@@ -191,14 +193,17 @@
             <div
               class="w-full md:w-1/2 px-5 py-7 xl:py-[3.75rem] xl:px-[2.5rem] hover:bg-dark-secondary relative group cursor-pointer transition border border-dark-secondary border-t-0 md:border-t md:border-l-0 xl:border-b-0"
             >
+              <!-- Service Items -->
               <!-- ===========*** *** ***=========== Service Items ===========*** *** ***=========== -->
               <div
                 class="w-[3rem] h-[0.125rem] bg-white absolute left-5 top-7 xl:top-[3.75rem] xl:left-[2.5rem]"
               ></div>
-              <h2 class="mt-[2.25rem] satoshi text-[1.5rem] font-semibold mb-6">
+              <h2
+                class="mt-[2.25rem] satoshi text-lg md:text-xl xl:text-2xl font-semibold mb-6"
+              >
                 Checking accounts
               </h2>
-              <p class="leading-loose">
+              <p class="leading-loose text-sm md:text-base">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
                 aliquam, purus sit amet luctus venenatis, lectus magna fringilla
                 urna, porttitor
@@ -223,10 +228,12 @@
             <div
               class="w-[3rem] h-[0.125rem] bg-white absolute left-5 top-7 xl:top-[3.75rem] xl:left-[2.5rem]"
             ></div>
-            <h2 class="mt-[2.25rem] satoshi text-[1.5rem] font-semibold mb-6">
+            <h2
+              class="mt-[2.25rem] satoshi text-lg md:text-xl xl:text-2xl font-semibold mb-6"
+            >
               Checking accounts
             </h2>
-            <p class="leading-loose">
+            <p class="leading-loose text-sm md:text-base">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
               aliquam, purus sit amet luctus venenatis, lectus magna fringilla
               urna, porttitor
@@ -245,10 +252,12 @@
             <div
               class="w-[3rem] h-[0.125rem] bg-white absolute left-5 top-7 xl:top-[3.75rem] xl:left-[2.5rem]"
             ></div>
-            <h2 class="mt-[2.25rem] satoshi text-[1.5rem] font-semibold mb-6">
+            <h2
+              class="mt-[2.25rem] satoshi text-lg md:text-xl xl:text-2xl font-semibold mb-6"
+            >
               Checking accounts
             </h2>
-            <p class="leading-loose">
+            <p class="leading-loose text-sm md:text-base">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
               aliquam, purus sit amet luctus venenatis, lectus magna fringilla
               urna, porttitor
@@ -267,10 +276,12 @@
             <div
               class="w-[3rem] h-[0.125rem] bg-white absolute left-5 top-7 xl:top-[3.75rem] xl:left-[2.5rem]"
             ></div>
-            <h2 class="mt-[2.25rem] satoshi text-[1.5rem] font-semibold mb-6">
+            <h2
+              class="mt-[2.25rem] satoshi text-lg md:text-xl xl:text-2xl font-semibold mb-6"
+            >
               Checking accounts
             </h2>
-            <p class="leading-loose">
+            <p class="leading-loose text-sm md:text-base">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
               aliquam, purus sit amet luctus venenatis, lectus magna fringilla
               urna, porttitor
@@ -289,7 +300,7 @@
 
       <!-- ===========*** *** ***=========== Benefits Section Starts Here ===========*** *** ***=========== -->
       <section
-        class="container-fluid grid grid-cols-1 xl:grid-cols-2 gap-[11.125rem] items-center"
+        class="container grid grid-cols-1 xl:grid-cols-2 gap-[11.125rem] items-center"
       >
         <aside>
           <h6 class="text-primary font-semibold rubik">Benefits</h6>
@@ -346,7 +357,7 @@
 
       <!-- ===========*** *** ***=========== Transaction Section Starts Here ===========*** *** ***=========== -->
       <section
-        class="mt-[9.375rem] mb-[4.375rem] xl:my-[13.125rem] grid grid-cols-1 xl:grid-cols-2 items-center gap-[6.75rem] container-fluid"
+        class="mt-[9.375rem] mb-[4.375rem] xl:my-[13.125rem] grid grid-cols-1 xl:grid-cols-2 items-center gap-[6.75rem] container"
       >
         <aside>
           <h6 class="text-primary font-semibold rubik">Our Services</h6>
@@ -373,12 +384,12 @@
 
       <!-- ===========*** *** ***=========== Services Feature Starts Here ===========*** *** ***=========== -->
 
-      <section class="container-fluid">
+      <section class="container">
         <div
-          class="xl:mx-[0.9375rem] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 text-white mb-[6rem] xl:mb-[13.125rem]"
+          class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 text-white mb-[6rem] xl:mb-[13.125rem]"
         >
           <div
-            class="p-[3.125rem] group hover:bg-dark-secondary cursor-pointer transition border border-dark-secondary"
+            class="p-5 md:p-10 xl:p-[3.125rem] group hover:bg-dark-secondary cursor-pointer transition border border-dark-secondary"
           >
             <div
               class="w-[3.3125rem] h-[3.3125rem] bg-white flex justify-center items-center mb-[1.375rem] group-hover:bg-primary transition"
@@ -402,7 +413,7 @@
             </a>
           </div>
           <div
-            class="p-[3.125rem] group hover:bg-dark-secondary cursor-pointer transition border border-dark-secondary md:border-l-0 border-t-0 md:border-t"
+            class="p-5 md:p-10 xl:p-[3.125rem] group hover:bg-dark-secondary cursor-pointer transition border border-dark-secondary md:border-l-0 border-t-0 md:border-t"
           >
             <div
               class="w-[3.3125rem] h-[3.3125rem] bg-white flex justify-center items-center mb-[1.375rem] group-hover:bg-primary transition"
@@ -426,7 +437,7 @@
             </a>
           </div>
           <div
-            class="p-[3.125rem] group hover:bg-dark-secondary cursor-pointer transition border border-dark-secondary md:border-t-0 md:border-l xl:border-l-0 xl:border-t"
+            class="p-5 md:p-10 xl:p-[3.125rem] group hover:bg-dark-secondary cursor-pointer transition border border-dark-secondary md:border-t-0 md:border-l xl:border-l-0 xl:border-t"
           >
             <div
               class="w-[3.3125rem] h-[3.3125rem] bg-white flex justify-center items-center mb-[1.375rem] group-hover:bg-primary transition"
@@ -457,56 +468,58 @@
       <!-- ===========*** *** ***=========== Testimonial Section Starts Here ===========*** *** ***=========== -->
 
       <section
-        class="container-fluid py-[7.5rem] bg-primary text-black"
+        class="py-[7.5rem] bg-primary text-black"
         style="background-image: url(../assets/black-bg.webp)"
+        id="testimonial"
       >
-        <h6 class="font-semibold rubik">Our Services</h6>
-        <div
-          class="flex flex-col xl:flex-row xl:items-center xl:justify-between"
-        >
-          <h1
-            class="mt-[1.31rem] text-[2.5rem] xl:text-[4.5rem] font-bold satoshi mb-[1.25rem] xl:w-7/12"
+        <div class="container">
+          <h6 class="font-semibold rubik">Our Services</h6>
+          <div
+            class="flex flex-col xl:flex-row xl:items-center xl:justify-between"
           >
-            Global businesses love FinanceX
-          </h1>
-          <aside class="flex items-center gap-5">
-            <button class="group">
-              <svg
-                version="1.2"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 53 53"
-                class="border-[0.125rem] rounded-full border-black group-hover:bg-black transition"
-                width="53"
-                height="53"
-              >
-                <path
-                  id="Layer"
-                  fill-rule="evenodd"
-                  class="fill-none stroke-dark stroke-[2] group-hover:stroke-white"
-                  d="m29 34l-8-8 8-8"
-                />
-              </svg></button
-            ><button class="group">
-              <svg
-                version="1.2"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 53 53"
-                class="border-[0.125rem] rounded-full border-black group-hover:bg-black rotate-180 transition"
-                width="53"
-                height="53"
-              >
-                <path
-                  id="Layer"
-                  fill-rule="evenodd"
-                  class="fill-none stroke-dark stroke-[2] group-hover:stroke-white"
-                  d="m29 34l-8-8 8-8"
-                />
-              </svg>
-            </button>
-          </aside>
-        </div>
+            <h1
+              class="mt-[1.31rem] text-[2.5rem] xl:text-[4.5rem] font-bold satoshi mb-[1.25rem] xl:w-7/12"
+            >
+              Global businesses love FinanceX
+            </h1>
+            <aside class="flex items-center gap-5">
+              <button class="group" id="owl-prev">
+                <svg
+                  version="1.2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 53 53"
+                  class="border-[0.125rem] rounded-full border-black group-hover:bg-black transition"
+                  width="53"
+                  height="53"
+                >
+                  <path
+                    id="Layer"
+                    fill-rule="evenodd"
+                    class="fill-none stroke-dark stroke-[2] group-hover:stroke-white"
+                    d="m29 34l-8-8 8-8"
+                  />
+                </svg></button
+              ><button class="group" id="owl-next">
+                <svg
+                  version="1.2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 53 53"
+                  class="border-[0.125rem] rounded-full border-black group-hover:bg-black rotate-180 transition"
+                  width="53"
+                  height="53"
+                >
+                  <path
+                    id="Layer"
+                    fill-rule="evenodd"
+                    class="fill-none stroke-dark stroke-[2] group-hover:stroke-white"
+                    d="m29 34l-8-8 8-8"
+                  />
+                </svg>
+              </button>
+            </aside>
+          </div>
 
-        <!-- <div
+          <!-- <div
         class="relative w-full overflow-x-scroll h-[50vw]"
         id="carousel-container"
       >
@@ -535,18 +548,165 @@
           architecto. Et delectus cumque consequatur!
         </div>
       </div> -->
+        </div>
+        <div
+          class="container overflow-x-hidden xl:overflow-x-visible mt-10"
+          id="testimonial-slider"
+        >
+          <div class="owl-carousel">
+            <div class="bg-black text-white p-10 h-full xl:px-12 xl:py-14">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+              urna, porttitor rhoncus dolor purus non enim praesent elementum
+              facilisis leo, vel
+
+              <div class="flex items-center mt-6 gap-3">
+                <img
+                  src="./assets/testimonial.jpg"
+                  alt="testimonial"
+                  class="!w-12 rounded-full"
+                />
+
+                <aside>
+                  <p class="satoshi text-sm text-white font-bold mb-1">
+                    Mahesh
+                  </p>
+                  <p class="rubik text-sm text-white opacity-70 font-bold">
+                    CEO
+                  </p>
+                </aside>
+              </div>
+            </div>
+
+            <div class="bg-black text-white p-10 h-full xl:px-12 xl:py-14">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+              urna, porttitor rhoncus dolor purus non enim praesent elementum
+              facilisis leo, vel
+
+              <div class="flex items-center mt-6 gap-3">
+                <img
+                  src="./assets/testimonial.jpg"
+                  alt="testimonial"
+                  class="!w-12 rounded-full"
+                />
+
+                <aside>
+                  <p class="satoshi text-sm text-white font-bold mb-1">
+                    Mahesh
+                  </p>
+                  <p class="rubik text-sm text-white opacity-70 font-bold">
+                    CEO
+                  </p>
+                </aside>
+              </div>
+            </div>
+            <div class="bg-black text-white p-10 h-full xl:px-12 xl:py-14">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+              urna, porttitor rhoncus dolor purus non enim praesent elementum
+              facilisis leo, vel
+
+              <div class="flex items-center mt-6 gap-3">
+                <img
+                  src="./assets/testimonial.jpg"
+                  alt="testimonial"
+                  class="!w-12 rounded-full"
+                />
+
+                <aside>
+                  <p class="satoshi text-sm text-white font-bold mb-1">
+                    Mahesh
+                  </p>
+                  <p class="rubik text-sm text-white opacity-70 font-bold">
+                    CEO
+                  </p>
+                </aside>
+              </div>
+            </div>
+            <div class="bg-black text-white p-10 h-full xl:px-12 xl:py-14">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+              urna, porttitor rhoncus dolor purus non enim praesent elementum
+              facilisis leo, vel
+
+              <div class="flex items-center mt-6 gap-3">
+                <img
+                  src="./assets/testimonial.jpg"
+                  alt="testimonial"
+                  class="!w-12 rounded-full"
+                />
+
+                <aside>
+                  <p class="satoshi text-sm text-white font-bold mb-1">
+                    Mahesh
+                  </p>
+                  <p class="rubik text-sm text-white opacity-70 font-bold">
+                    CEO
+                  </p>
+                </aside>
+              </div>
+            </div>
+            <div class="bg-black text-white p-10 h-full xl:px-12 xl:py-14">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+              urna, porttitor rhoncus dolor purus non enim praesent elementum
+              facilisis leo, vel
+
+              <div class="flex items-center mt-6 gap-3">
+                <img
+                  src="./assets/testimonial.jpg"
+                  alt="testimonial"
+                  class="!w-12 rounded-full"
+                />
+
+                <aside>
+                  <p class="satoshi text-sm text-white font-bold mb-1">
+                    Mahesh
+                  </p>
+                  <p class="rubik text-sm text-white opacity-70 font-bold">
+                    CEO
+                  </p>
+                </aside>
+              </div>
+            </div>
+            <div class="bg-black text-white p-10 h-full xl:px-12 xl:py-14">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+              urna, porttitor rhoncus dolor purus non enim praesent elementum
+              facilisis leo, vel
+
+              <div class="flex items-center mt-6 gap-3">
+                <img
+                  src="./assets/testimonial.jpg"
+                  alt="testimonial"
+                  class="!w-12 rounded-full"
+                />
+
+                <aside>
+                  <p class="satoshi text-sm text-white font-bold mb-1">
+                    Mahesh
+                  </p>
+                  <p class="rubik text-sm text-white opacity-70 font-bold">
+                    CEO
+                  </p>
+                </aside>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- ===========*** *** ***=========== Testimonial Section Ends Here ===========*** *** ***=========== -->
 
       <!-- ===========*** *** ***=========== Signup Section Starts Here ===========*** *** ***=========== -->
 
-      <section class="p-10 xl:py-[13.125rem] xl:px-[7.3125rem]">
+      <section class="py-10 xl:py-[13.125rem] container">
         <div
-          class="py-[3.625rem] bg-primary px-10 xl:px-[10rem] text-center flex justify-center items-center flex-col gap-[1.25rem]"
+          class="py-[3.625rem] bg-primary text-center flex justify-center items-center flex-col gap-[1.25rem]"
         >
           <h1
-            class="text-[2.5rem] xl:text-[4.5rem] satoshi font-bold text-secondary"
+            class="text-[2.5rem] xl:text-[4.5rem] satoshi font-bold text-secondary xl:mx-44"
           >
             Let’s grow your business, together.
           </h1>
@@ -568,10 +728,10 @@
       style="background-image: url(./assets/footer-bg.webp)"
     >
       <div
-        class="container-fluid border-b-light border-b-[0.125rem] text-white px-[7.4375rem] xl:flex gap-[2rem] pb-[3.75rem]"
+        class="container text-white px-[7.4375rem] xl:flex gap-[2rem] pb-[3.75rem]"
       >
         <div class="xl:w-1/4">
-          <h3 class="satoshi text-2xl font-bold">FinanceX</h3>
+          <h3 class="satoshi text-2xl font-bold mt-7">FinanceX</h3>
           <p class="rubik text-base text-light mt-[1.125rem] mb-[2.4375rem]">
             Lorem ipsum dolor sit amet, consectetur
           </p>
@@ -630,13 +790,28 @@
         </div>
       </div>
 
-      <p class="py-[2.625rem] text-center text-light font-medium satoshi">
-        Copyright @ Kartik Bansal 2022. All Rights Reserved.
-      </p>
+      <div class="h-[0.125rem] w-full bg-light"></div>
+
+      <div class="flex justify-between container">
+        <p class="py-[2.625rem] text-center text-light font-medium satoshi">
+          Copyright @ Kartik Bansal 2022. All Rights Reserved.
+        </p>
+
+        <p class="py-[2.625rem] text-center text-light font-medium satoshi">
+          Development Copyright @<a
+            class="underline hover:no-underline"
+            href="https://raddito.com/"
+            >Raddito</a
+          >
+          <span id="year"></span>. All Rights Reserved.
+        </p>
+      </div>
     </footer>
     <!-- ===========*** *** ***=========== Footer Section Ends Here ===========*** *** ***=========== -->
 
-    <script type="text/javascript" src="./../main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+    <!-- <script type="text/javascript" src="./../main.js"></script> -->
     <script type="module" src="/main.js"></script>
   </body>
 </html>
