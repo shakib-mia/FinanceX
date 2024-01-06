@@ -14,7 +14,7 @@ body {
 }
 
 #navbar {
-  @apply hidden;
+  @apply hidden xl:flex;
 }
 
 #navbar-check:checked + #navbar {

@@ -2,11 +2,12 @@
   "name": "financex",
   "private": true,
   "version": "0.0.0",
-  "type": ".cjx",
+  "type": ".cjs",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && npx netlify deploy --prod --dir dist"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",
