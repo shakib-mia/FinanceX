@@ -2,6 +2,7 @@ import Lenis from "@studio-freight/lenis";
 import "./style.css";
 
 const lenis = new Lenis();
+AOS.init();
 
 lenis.on("scroll", (e) => {
   // console.log(e);
@@ -27,7 +28,7 @@ $(document).ready(function () {
     dots: false,
     nav: true,
     // center: true,
-    startPosition: 1,
+    // startPosition: 1,
     responsive: {
       0: {
         items: 1,

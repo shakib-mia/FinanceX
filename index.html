@@ -16,6 +16,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.theme.default.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- ===========*** *** ***=========== NAVBAR STARTS HERE ===========*** *** ***=========== -->
@@ -35,7 +36,9 @@
           <a class="hover:text-white transition" href="#">Why financeX</a>
         </li>
         <li>
-          <a class="hover:text-white transition" href="#">Features</a>
+          <a class="hover:text-white transition" href="#transaction"
+            >Features</a
+          >
         </li>
         <li>
           <a class="hover:text-white transition" href="#">Update</a>
@@ -67,11 +70,16 @@
           class="grid grid-cols-1 xl:grid-cols-2 2xl:h-screen gap-[6.4375rem] container"
         >
           <aside>
-            <h6 class="text-primary text-[1.25rem] font-semibold">
+            <h6
+              class="text-primary text-[1.25rem] font-semibold"
+              data-aos="fade-right"
+            >
               Welcome! Future Platform
             </h6>
             <h1
               class="satoshi text-white text-[2.5rem] xl:text-[4.5rem] font-black"
+              data-aos="fade-right"
+              data-aos-delay="100"
             >
               The World's Most Modern Card
               <span class="text-primary">Platform</span>
@@ -79,13 +87,20 @@
 
             <p
               class="pt-[2.5rem] pb-[3.125rem] rubik text-light text-[1.125rem] leading-[1.6875rem]"
+              data-aos="fade-right"
+              data-aos-delay="200"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
               aliquam, purus sit amet luctus venenatis, lectus magna fringilla
               urna, porttitor
             </p>
 
-            <a href="#" class="button button-flex">
+            <a
+              href="#"
+              class="button button-flex"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
               Get Started <img src="./assets/arrow.svg" alt="" />
             </a>
           </aside>
@@ -107,35 +122,55 @@
         <div
           class="flex flex-wrap xl:flex-nowrap justify-between items-center gap-10 xl:gap-[9.75rem] container"
         >
-          <div class="h-[3.125rem] w-auto">
+          <div
+            class="h-[3.125rem] w-auto"
+            data-aos="zoom-in"
+            data-aos-delay="50"
+          >
             <img
               class="h-full w-auto"
               src="./assets/logos/Paypal-Grey.svg"
               alt="Paypal-Grey"
             />
           </div>
-          <div class="h-[3.125rem] w-auto">
+          <div
+            class="h-[3.125rem] w-auto"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
             <img
               class="h-full w-auto"
               src="./assets/logos/Adobe Grey.svg"
               alt="Adobe Grey"
             />
           </div>
-          <div class="h-[3.125rem] w-auto">
+          <div
+            class="h-[3.125rem] w-auto"
+            data-aos="zoom-in"
+            data-aos-delay="150"
+          >
             <img
               class="h-full w-auto"
               src="./assets/logos/Webflow Grey.svg"
               alt="Webflow Grey"
             />
           </div>
-          <div class="h-[3.125rem] w-auto">
+          <div
+            class="h-[3.125rem] w-auto"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
             <img
               class="h-full w-auto"
               src="./assets/logos/Google Grey.svg"
               alt="Google Grey"
             />
           </div>
-          <div class="h-[3.125rem] w-auto">
+          <div
+            class="h-[3.125rem] w-auto"
+            data-aos="zoom-in"
+            data-aos-delay="250"
+          >
             <img
               class="h-full w-auto"
               src="./assets/logos/amazon.svg"
@@ -150,25 +185,36 @@
       <section
         class="gap-[3.1875rem] container text-white my-10 xl:my-[13.125rem]"
       >
-        <div class="xl:flex">
+        <div class="xl:flex" id="services">
           <!-- ===========*** *** ***=========== Services Section left Part ===========*** *** ***=========== -->
           <div class="md:w-1/2 xl:w-5/12">
-            <h6 class="text-primary font-semibold rubik">Our Services</h6>
+            <h6 class="text-primary font-semibold rubik" data-aos="fade-right">
+              Our Services
+            </h6>
             <h1
               class="mt-[1.25rem] text-[1.875rem] xl:text-[3rem] font-bold satoshi mb-[1.25rem]"
+              data-aos="fade-right"
+              data-aos-delay="100"
             >
               Browse our <br />
               services &
               <span class="text-primary">offerings</span>
             </h1>
 
-            <a href="#" class="button button-flex">
+            <a
+              href="#"
+              class="button button-flex"
+              data-aos="fade-right"
+              data-aos-delay="150"
+            >
               Get Started <img src="./assets/arrow.svg" alt="" />
             </a>
           </div>
           <div class="xl:w-7/12 md:flex mt-10 xl:mt-0">
             <div
               class="w-full md:w-1/2 px-5 py-7 xl:py-[3.75rem] xl:px-[2.5rem] hover:bg-dark-secondary relative group cursor-pointer transition border xl:border-b-0 border-dark-secondary"
+              data-aos="zoom-in"
+              data-aos-delay="100"
             >
               <!-- ===========*** *** ***=========== Service Items ===========*** *** ***=========== -->
               <div
@@ -193,6 +239,8 @@
             </div>
             <div
               class="w-full md:w-1/2 px-5 py-7 xl:py-[3.75rem] xl:px-[2.5rem] hover:bg-dark-secondary relative group cursor-pointer transition border border-dark-secondary border-t-0 md:border-t md:border-l-0 xl:border-b-0"
+              data-aos="zoom-in"
+              data-aos-delay="150"
             >
               <!-- Service Items -->
               <!-- ===========*** *** ***=========== Service Items ===========*** *** ***=========== -->
@@ -224,6 +272,8 @@
         >
           <div
             class="px-5 py-7 xl:py-[3.75rem] xl:px-[2.5rem] hover:bg-dark-secondary relative group cursor-pointer transition border border-dark-secondary border-t-0 md:border-r xl:border-r-0 xl:border-t"
+            data-aos="zoom-in"
+            data-aos-delay="200"
           >
             <!-- ===========*** *** ***=========== Service Items ===========*** *** ***=========== -->
             <div
@@ -248,6 +298,8 @@
           </div>
           <div
             class="px-5 py-7 xl:py-[3.75rem] xl:px-[2.5rem] hover:bg-dark-secondary relative group cursor-pointer transition border border-dark-secondary md:border-l-0 xl:border-l xl:border-r border-t-0 xl:border-t"
+            data-aos="zoom-in"
+            data-aos-delay="250"
           >
             <!-- ===========*** *** ***=========== Service Items ===========*** *** ***=========== -->
             <div
@@ -272,6 +324,8 @@
           </div>
           <div
             class="px-5 py-7 xl:py-[3.75rem] xl:px-[2.5rem] hover:bg-dark-secondary relative group cursor-pointer transition border border-dark-secondary border-l xl:border-l-0 border-t-0 xl:border-t"
+            data-aos="zoom-in"
+            data-aos-delay="300"
           >
             <!-- ===========*** *** ***=========== Service Items ===========*** *** ***=========== -->
             <div
@@ -304,14 +358,22 @@
         class="container grid grid-cols-1 xl:grid-cols-2 gap-[11.125rem] items-center"
       >
         <aside>
-          <h6 class="text-primary font-semibold rubik">Benefits</h6>
+          <h6 class="text-primary font-semibold rubik" data-aos="fade-right">
+            Benefits
+          </h6>
           <h1
             class="mt-[1.25rem] text-[1.875rem] xl:text-[3rem] font-bold satoshi mb-[1.25rem] text-white xl:w-10/12 leading-[3rem]"
+            data-aos="fade-right"
+            data-aos-delay="100"
           >
             We have many users all over the
             <span class="text-primary">world</span>
           </h1>
-          <p class="mt-[1.875rem] mb-[5.0625rem] text-light">
+          <p
+            class="mt-[1.875rem] mb-[5.0625rem] text-light"
+            data-aos="fade-right"
+            data-aos-delay="150"
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
             purus sit amet luctus venenatis, lectus magna
           </p>
@@ -350,7 +412,12 @@
         <!-- ===========*** *** ***=========== Benefits Section asided image ===========*** *** ***=========== -->
         <aside class="hidden xl:block">
           <!-- ===========*** *** ***=========== Benefit Image ===========*** *** ***=========== -->
-          <img src="./assets/map.webp" class="h-[100%]" alt="" />
+          <img
+            src="./assets/map.webp"
+            class="h-[100%]"
+            alt=""
+            data-aos="zoom-in"
+          />
         </aside>
       </section>
 
@@ -359,21 +426,35 @@
       <!-- ===========*** *** ***=========== Transaction Section Starts Here ===========*** *** ***=========== -->
       <section
         class="mt-[9.375rem] mb-[4.375rem] xl:my-[13.125rem] grid grid-cols-1 xl:grid-cols-2 items-center gap-[6.75rem] container"
+        id="transaction"
       >
         <aside>
-          <h6 class="text-primary font-semibold rubik">Our Services</h6>
+          <h6 class="text-primary font-semibold rubik" data-aos="fade-right">
+            Our Services
+          </h6>
           <h1
             class="mt-[1.25rem] text-[1.875rem] xl:text-[3rem] font-bold satoshi mb-[1.25rem] text-white w-full xl:w-10/12"
+            data-aos="fade-right"
+            data-aos-delay="100"
           >
             Real Time
             <span class="text-primary">Transaction Report</span>
           </h1>
-          <p class="mt-[1.875rem] mb-[3.125rem] text-light">
+          <p
+            class="mt-[1.875rem] mb-[3.125rem] text-light"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
             purus sit amet luctus venenatis, lectus magna
           </p>
 
-          <a href="#" class="button button-flex">
+          <a
+            href="#"
+            class="button button-flex"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
             Get Started <img src="./assets/arrow.svg" alt="" />
           </a>
         </aside>
@@ -391,6 +472,7 @@
         >
           <div
             class="p-5 md:p-10 xl:p-[3.125rem] group hover:bg-dark-secondary cursor-pointer transition border border-dark-secondary"
+            data-aos="zoom-in"
           >
             <div
               class="w-[3.3125rem] h-[3.3125rem] bg-white flex justify-center items-center mb-[1.375rem] group-hover:bg-primary transition"
@@ -415,6 +497,8 @@
           </div>
           <div
             class="p-5 md:p-10 xl:p-[3.125rem] group hover:bg-dark-secondary cursor-pointer transition border border-dark-secondary md:border-l-0 border-t-0 md:border-t"
+            data-aos="zoom-in"
+            data-aos-delay="100"
           >
             <div
               class="w-[3.3125rem] h-[3.3125rem] bg-white flex justify-center items-center mb-[1.375rem] group-hover:bg-primary transition"
@@ -439,6 +523,8 @@
           </div>
           <div
             class="p-5 md:p-10 xl:p-[3.125rem] group hover:bg-dark-secondary cursor-pointer transition border border-dark-secondary md:border-t-0 md:border-l xl:border-l-0 xl:border-t"
+            data-aos="zoom-in"
+            data-aos-delay="200"
           >
             <div
               class="w-[3.3125rem] h-[3.3125rem] bg-white flex justify-center items-center mb-[1.375rem] group-hover:bg-primary transition"
@@ -474,12 +560,16 @@
         id="testimonial"
       >
         <div class="container">
-          <h6 class="font-semibold rubik">Our Services</h6>
+          <h6 class="font-semibold rubik" data-aos="fade-right">
+            Our Services
+          </h6>
           <div
             class="flex flex-col xl:flex-row xl:items-center xl:justify-between"
           >
             <h1
               class="mt-[1.31rem] text-[2.5rem] xl:text-[4.5rem] font-bold satoshi mb-[1.25rem] xl:w-7/12"
+              data-aos="fade-right"
+              data-aos-delay="100"
             >
               Global businesses love FinanceX
             </h1>
@@ -553,6 +643,8 @@
         <div
           class="container overflow-x-hidden xl:overflow-x-visible mt-10"
           id="testimonial-slider"
+          data-aos="fade-left"
+          data-aos-duration="500"
         >
           <div class="owl-carousel">
             <div class="bg-black text-white p-10 h-full xl:px-12 xl:py-14">
@@ -738,10 +830,18 @@
           </p>
 
           <div class="flex gap-4">
-            <img src="./assets/social/052-linkedin.svg" alt="linkedin" />
-            <img src="./assets/social/025-messenger.svg" alt="messenger" />
-            <img src="./assets/social/096-twitter.svg" alt="twitter" />
-            <img src="./assets/social/097-twoo.svg" alt="twoo" />
+            <a href="https://www.linkedin.com/" target="_blank"
+              ><img src="./assets/social/052-linkedin.svg" alt="linkedin"
+            /></a>
+            <a href="https://www.messenger.com/" target="_blank"
+              ><img src="./assets/social/025-messenger.svg" alt="messenger"
+            /></a>
+            <a href="https://www.twitter.com/" target="_blank"
+              ><img src="./assets/social/096-twitter.svg" alt="twitter"
+            /></a>
+            <a href="https://www.twoo.com/" target="_blank"
+              ><img src="./assets/social/097-twoo.svg" alt="twoo"
+            /></a>
           </div>
         </div>
         <div class="xl:w-3/4 xl:flex gap-[7.5rem]">
@@ -814,6 +914,7 @@
     </footer>
     <!-- ===========*** *** ***=========== Footer Section Ends Here ===========*** *** ***=========== -->
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
     <!-- <script type="text/javascript" src="./../main.js"></script> -->
