@@ -4,9 +4,7 @@ import "./style.css";
 const lenis = new Lenis();
 AOS.init();
 
-lenis.on("scroll", (e) => {
-  // console.log(e);
-});
+lenis.on("scroll", (e) => {});
 
 function raf(time) {
   lenis.raf(time);
@@ -15,20 +13,12 @@ function raf(time) {
 
 requestAnimationFrame(raf);
 
-// function toggleNavbar() {
-//   var navbarMenu = document.querySelector(".navbar-menu");
-//   navbarMenu.style.display =
-//     navbarMenu.style.display === "flex" ? "none" : "flex";
-// }
-
 $(document).ready(function () {
   // slider for tutorial section
   $("#testimonial .owl-carousel").owlCarousel({
     margin: 20,
     dots: false,
     nav: true,
-    // center: true,
-    // startPosition: 1,
     responsive: {
       0: {
         items: 1,
