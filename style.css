@@ -29,7 +29,8 @@ body {
 }
 
 .button {
-  @apply px-[1.5rem] xl:px-[2.8125rem] py-[1rem] xl:py-[1.3125rem] bg-primary w-fit text-secondary font-bold satoshi;
+  transition: 0.2s all ease !important;
+  @apply px-[1.5rem] xl:px-[2.8125rem] py-[1rem] xl:py-[1.3125rem] bg-primary w-fit text-secondary font-bold satoshi border-2 border-primary hover:bg-transparent hover:text-primary;
 }
 
 .button-flex {
