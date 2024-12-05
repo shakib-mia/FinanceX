@@ -2,7 +2,9 @@ import Lenis from "@studio-freight/lenis";
 import "./style.css";
 
 const lenis = new Lenis();
-AOS.init();
+AOS.init({
+  once: true,
+});
 
 lenis.on("scroll", (e) => {});
 
