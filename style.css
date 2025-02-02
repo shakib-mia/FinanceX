@@ -33,6 +33,11 @@ body {
   @apply px-[1.5rem] xl:px-[2.8125rem] py-[1rem] xl:py-[1.3125rem] bg-primary w-fit text-secondary font-bold satoshi border-2 border-primary hover:bg-transparent hover:text-primary;
 }
 
+.black-button {
+  transition: 0.2s all ease !important;
+  @apply px-[1.5rem] xl:px-[2.8125rem] py-[1rem] xl:py-[1.3125rem] bg-secondary w-fit text-primary font-bold satoshi border-2 border-secondary hover:bg-transparent hover:text-primary;
+}
+
 .button-flex {
   @apply flex gap-[1.3125rem] w-fit;
 }
@@ -128,4 +133,20 @@ body {
 
 ::-webkit-scrollbar {
   width: 0;
+}
+#clients .owl-item {
+  @apply flex justify-center;
+}
+
+#clients .owl-stage {
+  @apply flex !justify-between after:hidden overflow-x-hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply !leading-[150%];
 }
