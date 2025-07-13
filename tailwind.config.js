@@ -2,6 +2,16 @@
 export default {
   content: ["./index.html", "./*.js", "./public/*.html"],
   theme: {
+    container: {
+      padding: "1rem",
+      center: true,
+      screens: {
+        sm: "100%",
+        md: "768px",
+        lg: "1000px",
+        xl: "1200px",
+      },
+    },
     extend: {
       colors: {
         primary: "#CBFC01",

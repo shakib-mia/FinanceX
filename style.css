@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  @apply px-4 !max-w-[1200px] !mx-auto xl:px-0;
+  /* @apply px-4 !max-w-[1200px] !mx-auto xl:px-0; */
 }
 
 #navbar {

@@ -1,5 +1,37 @@
 import Lenis from "@studio-freight/lenis";
 import "./style.css";
+import Swiper from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
+
+document.addEventListener("DOMContentLoaded", () => {
+  const swiper = new Swiper(".swiper", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: false,
+    modules: [Navigation],
+    navigation: {
+      nextEl: ".swiper-next",
+      prevEl: ".swiper-prev",
+    },
+    // pagination: {
+    //   el: ".swiper-pagination",
+    //   clickable: true,
+    // },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      640: { slidesPerView: 1, spaceBetween: 10 },
+      768: { slidesPerView: 2, spaceBetween: 15 },
+      1024: { slidesPerView: 3, spaceBetween: 20 },
+    },
+  });
+});
+
+// console.log(document.querySelector(".swiper-next"));
 
 const lenis = new Lenis();
 AOS.init({
@@ -16,66 +48,50 @@ function raf(time) {
 
 requestAnimationFrame(raf);
 
-$(document).ready(function () {
-  $("#clients .owl-carousel").owlCarousel({
-    margin: 20,
-    dots: false,
-    nav: true,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    responsive: {
-      0: {
-        items: 3,
-        loop: true,
-      },
+// $(document).ready(function () {
+//   $("#clients .owl-carousel").owlCarousel({
+//     margin: 20,
+//     dots: false,
+//     nav: true,
+//     autoplay: true,
+//     autoplayTimeout: 3000,
+//     responsive: {
+//       0: {
+//         items: 3,
+//         loop: true,
+//       },
 
-      768: {
-        items: 3,
-      },
+//       768: {
+//         items: 3,
+//       },
 
-      1024: {
-        items: 5,
-        loop: false,
-        mouseDrag: false,
-      },
-    },
-  });
-  // slider for tutorial section
-  $("#testimonial .owl-carousel").owlCarousel({
-    margin: 20,
-    dots: false,
-    nav: true,
-    responsive: {
-      0: {
-        items: 1,
-      },
+//       1024: {
+//         items: 5,
+//         loop: false,
+//         mouseDrag: false,
+//       },
+//     },
+//   });
+//   // slider for tutorial section
+//   $("#testimonial .owl-carousel").owlCarousel({
+//     margin: 20,
+//     dots: false,
+//     nav: true,
+//     responsive: {
+//       0: {
+//         items: 1,
+//       },
 
-      768: {
-        items: 2,
-      },
+//       768: {
+//         items: 2,
+//       },
 
-      1024: {
-        items: 3,
-      },
-    },
-  });
-});
-
-const handleSlideClick = (id, direction) => {
-  document.querySelector(id + ` .owl-${direction}`).click();
-};
-
-document
-  .getElementById("owl-next")
-  .addEventListener("click", () =>
-    handleSlideClick("#testimonial-slider", "next")
-  );
-
-document
-  .getElementById("owl-prev")
-  .addEventListener("click", () =>
-    handleSlideClick("#testimonial-slider", "prev")
-  );
+//       1024: {
+//         items: 3,
+//       },
+//     },
+//   });
+// });
 
 document.getElementById("year").innerText = new Date().getFullYear();
 

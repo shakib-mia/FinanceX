@@ -1,10 +1,10 @@
-# FinanceX
+# Finlytics
 
 This website is an e-commerce platform built with Vanilla ViteJS, focusing on high-quality cosmetic products and leveraging TailwindCSS for responsive design and SwiperJS for interactive product sliders.
 
 AOS (Animate On Scroll) enhances user engagement with smooth animations throughout the site. Customers can easily browse and favorite products, with testimonials adding credibility to the brand's offerings. The site combines advanced web technologies and a user-centric approach to deliver a comprehensive and accessible beauty shopping experience.
 
-[Click here](https://financex.netlify.app/) to get the live preview
+[Click here](https://Finlytics.netlify.app/) to get the live preview
 
 ## Packages
 
