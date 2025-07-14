@@ -29,7 +29,7 @@ AOS (Animate On Scroll) enhances user engagement with smooth animations througho
 
 1. Designed By [Kartik Bansal](<https://www.figma.com/file/5Qocnzgr3m9770W0Z1nPHy/Landing-Page-UI-Kit-(Community)?type=design&node-id=504-229&mode=design&t=43MdFpiG07TyUK9W-0>)
 
-2. Developed By [Md. Shakib Mia](https://md-shakib-mia.web.app/)
+2. Developed By [Template Hearth](https://www.facebook.com/templatehearth)
 
 # Available Scripts
 
